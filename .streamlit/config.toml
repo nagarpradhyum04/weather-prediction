@@ -2,8 +2,5 @@
 enableCORS = true
 
 [runner]
-
-CRITICAL FIX: This installs dependencies from your custom file name (requirment.txt)
-and uses the --no-binary :all: flag to force building from source, which resolves
-low-level "Spawn Errors" on the deployment server.
-install_command = "pip install -r requirment.txt --no-binary :all:"
+ 
+install_command = "pip install -r requirment.txt --no-binary numpy"
