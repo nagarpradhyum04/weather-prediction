@@ -1,1 +1,1 @@
-libgfortran5
+gfortran
