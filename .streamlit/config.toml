@@ -1,0 +1,6 @@
+ [general]
+enableCORS = true
+
+[runner]
+# This line tells the server to use your specific dependency file name: requirment.txt
+install_command = "pip install -r requirment.txt"
