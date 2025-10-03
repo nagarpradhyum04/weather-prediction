@@ -1,6 +1,6 @@
-cd "c:\Users\wowpr\OneDrive\Desktop\weather prediction"
-# The commit will delete packages.txt and update config.toml
-git add .
-git commit -m "Final attempt: Removing packages.txt and using --no-binary in config.toml to force stable installation."
-git push
-4.  **Redeploy:** Force a new build on Streamlit Cloud.
+ [general]
+enableCORS = true
+
+[runner]
+# This line tells the server to use your specific dependency file name: requirment.txt
+install_command = "pip install -r requirment.txt"
