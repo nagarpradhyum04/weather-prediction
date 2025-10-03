@@ -1,6 +1,9 @@
- [general]
+[general]
 enableCORS = true
 
 [runner]
-# This line tells the server to use your specific dependency file name: requirment.txt
-install_command = "pip install -r requirment.txt"
+
+CRITICAL FIX: This installs dependencies from your custom file name (requirment.txt)
+and uses the --no-binary :all: flag to force building from source, which resolves
+low-level "Spawn Errors" on the deployment server.
+install_command = "pip install -r requirment.txt --no-binary :all:"
